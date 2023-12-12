@@ -1,5 +1,6 @@
 "use client";
 import { AppContext } from "@/AppContext";
+import Link from "next/link";
 import { useContext } from "react";
 
 export default function PageTechSkills() {
@@ -11,7 +12,7 @@ export default function PageTechSkills() {
 			<ul className="list-disc ml-6 mt-3">
 				{techSkills.map(techSkill => {
 					return (
-						<li key={techSkill.id}>{techSkill.name}</li>
+						<li key={techSkill.id}><Link href={`techskills/${techSkill.id}`}>{techSkill.name}</Link></li>
 					)
 				})}
 			</ul>
