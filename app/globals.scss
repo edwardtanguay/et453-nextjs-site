@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+$mainColor: black;
+
+main {
+	h1 {
+		color: $mainColor;
+	}
+}
