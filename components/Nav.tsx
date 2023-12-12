@@ -11,18 +11,32 @@ export const Nav = () => {
 				<li>
 					<Link
 						href="/"
-						className={`${
+						className={
 							activeSegment === null ? "text-yellow-200" : ""
-						}`}
+						}
 					>
 						Welcome
 					</Link>
 				</li>
 				<li>
-					<Link href="/techskills">Tech Skills</Link>
+					<Link
+						href="/techskills"
+						className={
+							activeSegment === 'techskills' ? "text-yellow-200" : ""
+						}
+					>
+						Tech Skills
+					</Link>
 				</li>
 				<li>
-					<Link href="/techbooks">Tech Books</Link>
+					<Link
+						href="/techbooks"
+						className={
+							activeSegment === 'techbooks' ? "text-yellow-200" : ""
+						}
+					>
+						Tech Books
+					</Link>
 				</li>
 			</ul>
 		</nav>
